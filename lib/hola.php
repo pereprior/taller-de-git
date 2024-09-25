@@ -1,8 +1,8 @@
 <?php
-
   // Author: Pere Prior <pj.prior.es@gmail.com>
+  require('holaMundo.php')
+
   print "Introduce tu nombre:"
   $nombre = trim(fgets(STDIN));
-  @print "Hola {$nombre}\n";
-
+  print new HolaMundo($nombre)
 ?>
